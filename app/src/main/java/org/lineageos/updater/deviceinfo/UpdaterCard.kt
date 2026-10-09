@@ -247,15 +247,16 @@ fun UpdaterCard(
                         .fillMaxWidth()
                         .padding(SettingsDimension.paddingLarge),
                 ) {
-                    Image(
-                        painter = painterResource(R.drawable.lineage_mark_tight),
-                        contentDescription = stringResource(R.string.brand_name),
-                        modifier = Modifier
-                            .width(markWidth)
-                            .alignBy { it.measuredHeight },
-                        contentScale = ContentScale.FillWidth,
-                        // Brand guide: "Use white when on dark backgrounds".
-                        colorFilter = ColorFilter.tint(onBrandColor),
+                    Text(
+                        text = stringResource(R.string.brand_name),
+                        style = versionStyle.copy(
+                            fontSize = versionStyle.fontSize * 0.7f,
+                            lineHeight = versionStyle.fontSize * 0.7f,
+                            fontWeight = FontWeight.Medium,
+                            letterSpacing = 0.em,
+                        ),
+                        maxLines = 1,
+                        modifier = Modifier.alignByBaseline(),
                     )
 
                     Spacer(modifier = Modifier.width(markWidth * VERSION_MARK_SPACING_RATIO))

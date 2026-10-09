@@ -5,16 +5,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Base background of the header card. -->
-    <color name="brand_primary">#167C80</color>
+    <color name="brand_primary">@android:color/system_accent1_600</color>
 
     <!-- Tiled pattern overlay color for the header card. -->
-    <color name="brand_pattern">#48A0A3</color>
+    <color name="brand_pattern">@android:color/system_accent1_500</color>
 
     <!-- Content color on the header (text, icons, mark). Always white on teal. -->
-    <color name="on_brand_surface">#FFFFFF</color>
+    <color name="on_brand_surface">@android:color/system_accent1_0</color>
 
     <!-- Sheen gradient color -->
-    <color name="brand_sheen">#EADDFF</color>
+    <color name="brand_sheen">@android:color/system_accent1_100</color>
 
     <!-- URL template for opening the device-specific downloads page from the update menu. -->
     <string name="menu_downloads_url" translatable="false">https://download.lineageos.org/devices/<xliff:g id="device_name">%1$s</xliff:g>/builds</string>
