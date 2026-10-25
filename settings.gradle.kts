@@ -26,5 +26,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Updater"
+rootProject.name = "BluenixxUpdater"
 include(":app")

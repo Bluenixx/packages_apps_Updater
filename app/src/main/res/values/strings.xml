@@ -4,19 +4,19 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Updater</string>
+    <string name="app_name">Bluenixx Updater</string>
 
     <!-- This is matched with system_update_settings_list_item_title
          from the Settings app. -->
-    <string name="display_name">System updates</string>
+    <string name="display_name">Bluenixx Updater</string>
 
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
-    <string name="download_path" translatable="false">/data/lineageos_updates/</string>
+    <string name="download_path" translatable="false">/data/bluenixx_updates/</string>
 
     <!-- Directory where the downloads will be exported to.
          The path is relative to the root of the external storage.-->
-    <string name="export_path" translatable="false">LineageOS updates/</string>
+    <string name="export_path" translatable="false">Bluenixx updates/</string>
 
     <!--
         Optional placeholders replaced at runtime:
@@ -91,8 +91,8 @@
     <string name="menu_stream_updates_summary">Install updates while downloading. Disable to save update packages for export.</string>
     <string name="menu_delete_update">Delete</string>
     <string name="menu_export_update">Export update</string>
-    <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/Bluenixx/bluenixx-ota/refs/heads/main/devices/changelog/bluenixx.txt</string>
-    <string name="menu_view_downloads">View on <xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g> Downloads</string>
+    <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/Bluenixx/bluenixx-ota/refs/heads/main/devices/changelog/%1$s.txt</string>
+    <string name="menu_view_downloads">View on <xliff:g id="brand_name" example="Bluenixx">%1$s</xliff:g> Downloads</string>
     <string name="menu_metered_network_warning">Metered network warning</string>
     <string name="menu_metered_network_warning_summary">Warn before downloading over mobile data</string>
     <string name="menu_ab_perf_mode">Prioritize update process</string>
@@ -118,21 +118,21 @@
     <string name="security_update">Security update</string>
     <string name="show_changelog">Recent changes</string>
     <string name="report_issues">Report issues</string>
-    <string name="report_issue_url" translatable="false">https://wiki.lineageos.org/how-to/bugreport/</string>
+    <string name="report_issue_url" translatable="false">https://github.com/Bluenixx/packages_apps_Updater/issues</string>
     <string name="header_review_updates">Review updates and recent changes on</string>
-    <string name="header_download_url" translatable="false">download.lineageos.org</string>
+    <string name="header_download_url" translatable="false">github.com/Bluenixx/bluenixx-ota</string>
     <string name="found_bug">Found a bug? Report it with our bug report guide:</string>
 
-    <string name="updates_zero_state_title">No updates available</string>
-    <string name="updates_zero_state_description">New builds for this device will appear here when available.</string>
+    <string name="updates_zero_state_title">Your system is up to date</string>
+    <string name="updates_zero_state_description">When a new Bluenixx build is ready for this device, you will find it here.</string>
 
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Bluenixx <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Bluenixx <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_update_size">Update size: <xliff:g id="size" example="1.34 GB">%1$s</xliff:g></string>
     <string name="list_security_update">Security update: <xliff:g id="date" example="Jan 2026">%1$s</xliff:g></string>
     <string name="list_major_android_upgrade">Major Android upgrade</string>
     <string name="list_full_install">Full install: Safe to install over any previous build</string>
-    <string name="list_major_upgrade_recovery_install">Major <xliff:g id="brand_name" example="LineageOS">%1$s</xliff:g> version upgrades must be installed manually. Refer to your device\'s guide to continue.</string>
+    <string name="list_major_upgrade_recovery_install">Major <xliff:g id="brand_name" example="Bluenixx">%1$s</xliff:g> version upgrades must be installed manually. Refer to your device\'s guide to continue.</string>
     <string name="list_downgrade_blocked">This build is older than the installed system and cannot be applied.</string>
     <string name="list_download_progress_newer"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g></string>
     <string name="list_download_progress_eta_newer"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>)</string>
@@ -174,7 +174,7 @@
 
     <string name="blocked_update_dialog_title">Update blocked</string>
     <string name="blocked_update_dialog_message">This update cannot be installed using the updater app.  Please read <xliff:g id="info_url">%1$s</xliff:g> for more information.</string>
-    <string name="blocked_update_info_url" translatable="false">https://wiki.lineageos.org/devices/<xliff:g id="device_name">%1$s</xliff:g>/upgrade/</string>
+    <string name="blocked_update_info_url" translatable="false">https://github.com/Bluenixx/bluenixx-ota</string>
 
     <string name="blocked_update_dialog_title_downgrade">Downgrade blocked</string>
     <string name="blocked_update_dialog_message_downgrade">This update is older than the current system and cannot be installed.</string>
@@ -191,4 +191,36 @@
     <string name="local_update_import_success_message">Build date: <xliff:g id="build_date" example="Apr 27">%1$s</xliff:g>\n\nTap the imported update to view available actions.</string>
     <string name="local_update_import_failure">Failed to import local update</string>
     <string name="local_update_name">Local update</string>
+
+    <!-- Bluenixx updater interface -->
+    <string name="updater_subtitle">SYSTEM UPDATE CENTER</string>
+    <string name="updater_check_label">SYSTEM STATUS</string>
+    <string name="updater_check_idle_title">A better system starts here</string>
+    <string name="updater_check_idle_summary">Check for the latest Bluenixx build and keep your device up to date.</string>
+    <string name="updater_checking_title">Looking for updates</string>
+    <string name="updater_checking_summary">Connecting securely to the Bluenixx update service.</string>
+    <string name="updater_updates_section">Available builds</string>
+    <string name="updater_device_section">Installed system</string>
+    <string name="updater_build_label">BUILD</string>
+    <string name="updater_date_label">DATE</string>
+    <string name="updater_android_label">ANDROID</string>
+    <string name="updater_patch_label">PATCH</string>
+    <string name="updater_import_action">Install from file</string>
+    <string name="updater_settings_action">Updater settings</string>
+    <string name="updater_preferences_title">Updater preferences</string>
+    <string name="updater_preferences_intro">Choose how Bluenixx checks, downloads and installs system updates.</string>
+    <string name="updater_last_checked_never">No update check yet</string>
+    <string name="updater_available_status">Ready to check</string>
+    <string name="updater_preferences_sync">Background checks</string>
+    <string name="updater_preferences_delivery">Download and installation</string>
+    <string name="updater_interval_daily">Every day</string>
+    <string name="updater_interval_weekly">Every week</string>
+    <string name="updater_interval_monthly">Every month</string>
+    <string name="updater_interval_title">Check interval</string>
+    <string name="updater_back">Back</string>
+    <string name="updater_done">Done</string>
+    <string name="updater_interval_summary">How often should Bluenixx look for new builds?</string>
+    <string name="updater_local_install_summary">Choose a package stored on your device</string>
+    <string name="updater_settings_summary">Automatic checks, network options and install behavior</string>
+
 </resources>
